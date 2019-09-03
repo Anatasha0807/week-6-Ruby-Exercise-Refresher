@@ -48,7 +48,7 @@ describe 'the Ruby test :)' do
     expect(n).to eq [1, 2, 3, 4, 5]
   end
 
-  fit 'array_sort_by_last_letter_of_word' do
+  it 'array_sort_by_last_letter_of_word' do
     n = array_sort_by_last_letter_of_word ['sky', 'puma', 'ruby']
     expect(n).to eq ['puma', 'ruby', 'sky']
   end
@@ -74,7 +74,7 @@ describe 'the Ruby test :)' do
     expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
   end
 
-  it 'number_of_elements_that_are_palindromes' do
+  it 'number_of_elements_that_are_palindromes' do #??
     n = number_of_elements_that_are_palindromes ['bob', 'radar', 'rambutan', 'noon', 'banana']
     expect(n).to eq 3
   end
@@ -159,7 +159,7 @@ describe 'the Ruby test :)' do
     expect(n).to eq 'rambutan'
   end
 
-  it 'titleize_a_string' do
+  fit 'titleize_a_string' do
     n = titleize_a_string 'the lion the witch and the wardrobe'
     expect(n).to eq 'The Lion the Witch and the Wardrobe'
   end
